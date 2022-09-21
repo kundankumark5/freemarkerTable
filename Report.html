@@ -1,0 +1,393 @@
+_
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>freemarker</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body style="margin: 0 auto; padding: 0; font-family: 'Roboto', sans-serif">
+    <div style="width: 696px; margin: 0 auto">
+      <table
+        border="0"
+        width="696"
+        cellspacing="0"
+        cellpadding="0"
+        style="width: 100%; margin: 0 auto"
+      >
+        <tbody>
+          <tr>
+            <td width="696" style="width: 100%">
+              <table
+                width="100%"
+                border="0"
+                cellspacing="0"
+                cellpadding="0"
+                style="width: 100%"
+              >
+                <tbody>
+                  <tr>
+                    <td style="width: 100%">
+                      <table
+                        border="0"
+                        cellspacing="0"
+                        cellpadding="0"
+                        style="width: 100%"
+                      >
+                        <tbody>
+                          <tr>
+                            <td>&nbsp;</td>
+                            <td rowspan="2">
+                              <img src="${header_image}" alt="header" />
+                            </td>
+                          </tr>
+                          <tr>
+                            <td
+                              colspan="2"
+                              style="padding-left: 20px; width: 100%"
+                            >
+                              <table
+                                border="0"
+                                cellspacing="0"
+                                cellpadding="0"
+                                style="margin-top: 109px"
+                              >
+                                <tbody>
+                                  <tr>
+                                    <td
+                                      style="
+                                        font-size: 20px;
+                                        font-weight: normal;
+                                        color: #fff;
+                                        line-height: 28px;
+                                        margin: 0 0 6px 0;
+                                        padding: 0;
+                                      "
+                                    >
+                                      ${hotel_name} - ${outlet_name}
+                                    </td>
+                                  </tr>
+                                  <tr>
+                                    <td
+                                      style="
+                                        font-size: 25px;
+                                        font-weight: bold;
+                                        color: #fff;
+                                        line-height: 28px;
+                                        margin: 0 0 6px 0;
+                                        padding: 0;
+                                      "
+                                    >
+                                      ${header_subject}
+                                    </td>
+                                  </tr>
+                                  <tr>
+                                    <td
+                                      style="
+                                        font-size: 16px;
+                                        font-weight: normal;
+                                        color: #fff;
+                                        line-height: 28px;
+                                        margin: 0;
+                                        padding: 0;
+                                        opacity: 0.7;
+                                      "
+                                    >
+                                      ${from_date} - ${to_date}
+                                    </td>
+                                  </tr>
+                                </tbody>
+                              </table>
+                            </td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td
+                      height="50"
+                      align="left"
+                      valign="top"
+                      style="background-color: #fff; width: 100%"
+                    >
+                      &nbsp;
+                    </td>
+                  </tr>
+
+                  <tr>
+                    <td
+                      align="left"
+                      valign="top"
+                      style="background-color: #fff; width: 100%"
+                    >
+                      <table
+                        width="100%"
+                        border="0"
+                        cellspacing="0"
+                        cellpadding="0"
+                        style="width: 100%"
+                      >
+                        <tbody>
+                          <#list sections as key>
+                          <tr>
+                            <td
+                              height="20"
+                              align="left"
+                              valign="top"
+                              style="
+                                padding: 0px 0px 20px 0px;
+                                background-color: #fff;
+                              "
+                            >
+                              <p
+                                style="
+                                  font-weight: 500;
+                                  font-size: 20px;
+                                  color: #3b3b3b;
+                                  margin: 0;
+                                  padding: 0;
+                                  line-height: 1.4;
+                                "
+                              >
+                                ${key.title}
+                              </p>
+                            </td>
+                            ${key?index} == 0
+
+                            <td
+                              height="20"
+                              align="left"
+                              valign="top"
+                              style="
+                                padding: 0px 0px 20px 0px;
+                                background-color: #fff;
+                              "
+                            >
+                              <p
+                                style="
+                                  font-weight: 500;
+                                  font-size: 20px;
+                                  color: #3b3b3b;
+                                  margin: 0;
+                                  padding: 0;
+                                  line-height: 1.4;
+                                  text-align: center;
+                                "
+                              >
+                                Day
+                              </p>
+                            </td>
+                            <td
+                              height="20"
+                              align="left"
+                              valign="top"
+                              style="
+                                padding: 0px 0px 20px 0px;
+                                background-color: #fff;
+                              "
+                            >
+                              <p
+                                style="
+                                  font-weight: 500;
+                                  font-size: 20px;
+                                  color: #3b3b3b;
+                                  margin: 0;
+                                  padding: 0;
+                                  line-height: 1.4;
+                                  text-align: center;
+                                "
+                              >
+                                MTD
+                              </p>
+                            </td>
+                            <td
+                              height="20"
+                              align="left"
+                              valign="top"
+                              style="
+                                padding: 0px 0px 20px 0px;
+                                background-color: #fff;
+                              "
+                            >
+                              <p
+                                style="
+                                  font-weight: 500;
+                                  font-size: 20px;
+                                  color: #3b3b3b;
+                                  margin: 0;
+                                  padding: 0;
+                                  line-height: 1.4;
+                                  text-align: center;
+                                "
+                              >
+                                YTD
+                              </p>
+                            </td>
+                          </tr>
+                          <tr>
+                            <#list key.listItems as item>
+
+                            <td align="left" valign="top">
+                              <p
+                                style="
+                                  font-size: 16px;
+                                  color: #3b3b3b;
+                                  font-weight: 500;
+                                  margin: 0 0 10px 0;
+                                  padding: 0;
+                                  line-height: 1.25;
+                                  letter-spacing: 0.96px;
+                                "
+                              >
+                                ${item.label}
+                              </p>
+                            </td>
+                            <td valign="top">
+                              <p
+                                style="
+                                  font-size: 16px;
+                                  font-weight: 600;
+                                  color: #5a7593;
+                                  margin: 0;
+                                  padding: 0;
+                                  margin: 0;
+                                  line-height: 1.25;
+                                  letter-spacing: 0.32px;
+                                  text-align: center;
+                                "
+                              >
+                                ${item.value1}
+                              </p>
+                            </td>
+                            <td valign="top">
+                              <p
+                                style="
+                                  font-size: 16px;
+                                  font-weight: 600;
+                                  color: #5a7593;
+                                  margin: 0;
+                                  padding: 0;
+                                  margin: 0;
+                                  line-height: 1.25;
+                                  letter-spacing: 0.32px;
+                                  text-align: center;
+                                "
+                              >
+                                ${item.value2}
+                              </p>
+                            </td>
+                            <td valign="top">
+                              <p
+                                style="
+                                  font-size: 16px;
+                                  font-weight: 600;
+                                  color: #5a7593;
+                                  margin: 0;
+                                  padding: 0;
+                                  margin: 0;
+                                  line-height: 1.25;
+                                  letter-spacing: 0.32px;
+                                  text-align: center;
+                                "
+                              >
+                                ${item.value3}
+                              </p>
+                            </td>
+                            </#list>
+                          </tr>
+
+                          </#list>
+                        </tbody>
+                      </table>
+                    </td>
+                  </tr>
+
+                  <tr>
+                    <td
+                      height="20"
+                      align="left"
+                      valign="top"
+                      style="background-color: #fff; width: 100%"
+                    ></td>
+                  </tr>
+                  <tr>
+                    <td
+                      height="1"
+                      align="left"
+                      valign="top"
+                      style="background-color: #fff; width: 100%"
+                    ></td>
+                  </tr>
+
+                  <tr>
+                    <td
+                      height="20"
+                      align="left"
+                      valign="top"
+                      style="background-color: #fff"
+                    ></td>
+                  </tr>
+                  <tr>
+                    <td
+                      height="1"
+                      align="left"
+                      valign="top"
+                      style="background-color: #eaeaea"
+                    ></td>
+                  </tr>
+
+                  <tr>
+                    <td
+                      height="45"
+                      align="left"
+                      valign="top"
+                      style="background-color: #fff"
+                    ></td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <table
+                        width="100%"
+                        border="0"
+                        cellspacing="0"
+                        cellpadding="0"
+                      >
+                        <tbody>
+                          <tr>
+                            <td
+                              height="25"
+                              style="
+                                font-size: 10px;
+                                line-height: 1.5;
+                                letter-spacing: 0.6px;
+                                text-align: center;
+                                color: #9f9f9f;
+                                width: 100%;
+                              "
+                            >
+                              <div style="background-color: #fff; width: 100%">
+                                &nbsp;
+                                <span style="color: #4b56c0">&nbsp;</span>
+                              </div>
+                            </td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </body>
+</html>
